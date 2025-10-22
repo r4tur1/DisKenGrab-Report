@@ -146,25 +146,28 @@
             align-items: center;
             height: 70px;
         }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+        }
+
         .logo-circle {
-            position: absolute;
-            top: 30px;
-            right: 30px;
-            width: 80px;
-            height: 80px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
-            border: 3px solid var(--primary);
+            border: 2px solid var(--primary);
             object-fit: cover;
-            box-shadow: 0 0 20px var(--primary);
+            box-shadow: 0 0 15px var(--primary);
             transition: all 0.3s ease;
-            z-index: 100;
         }
 
         .logo-circle:hover {
             transform: scale(1.1) rotate(5deg);
-            border-color: var(--primary);
+            border-color: var(--primary-light);
         }
-
+        
         .logo-text {
             font-size: 1.5rem;
             font-weight: 700;
@@ -651,8 +654,8 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="https://github.com/r4tur1" class="logo">
-            <img src="r4tur1.jpg" alt="DisKenGrab" class="logo-image">
-            <span class="logo-text">DisKenGrab-Report</span>
+    <img src="r4tur1.jpg" alt="DisKenGrab" class="logo-circle">
+    <span class="logo-text">DisKenGrab-Report</span>
         </a>
             <ul class="nav-links">
                 <li class="nav-item dropdown">
