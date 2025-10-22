@@ -146,26 +146,18 @@
             align-items: center;
             height: 70px;
         }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            text-decoration: none;
-        }
-
         .logo-circle {
-            width: 40px;
-            height: 40px;
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            width: 80px;
+            height: 80px;
             border-radius: 50%;
-            background: var(--gradient);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 2px solid transparent;
+            border: 3px solid var(--primary);
+            object-fit: cover;
+            box-shadow: 0 0 20px var(--primary);
+            transition: all 0.3s ease;
+            z-index: 100;
         }
 
         .logo-circle:hover {
